@@ -1,17 +1,45 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 3
+      Sobre
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item lines="full">
+    <ion-avatar slot="end">
+      <img src="assets/eu.jpg">
+    </ion-avatar>
+    <ion-label class="ion-text-wrap">
+      <div>
+        <h2>Gabriel José Soto Ravanhan</h2>
+        <p>Estudante da Etec "Cidade do Livro"</p>
+        <p>Macatuba-SP</p>
+        <p>(14) 99872-4956</p>
+        <p class="ion-text-nowrap">
+          <a href="mailto:gabriel.ravanhan@etec.sp.gov.br">
+            gabriel.ravanhan@etec.sp.gov.br
+          </a>
+        </p>
+      </div>
+    </ion-label>
+  </ion-item>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="ion-text-center">
+    <img src="https://assets.pokemon.com/static2/br/img/icons/tcgo_logo.png">
+  </div>
+
+  <ion-item lines="full">
+    <ion-label>Versão</ion-label>
+    <ion-badge slot="end" color="tertiary">0.1</ion-badge>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label>Ano</ion-label>
+    <ion-badge slot="end" color="tertiary">2021</ion-badge>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label>Turma</ion-label>
+    <ion-badge slot="end" color="tertiary">A</ion-badge>
+  </ion-item>
 </ion-content>
