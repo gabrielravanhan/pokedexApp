@@ -10,180 +10,252 @@
   <ion-searchbar placeholder="Buscar Pokémon"></ion-searchbar>
 
   <ion-list>
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Bulbasaur
-          </h3>
-          <ion-badge color="grass">Grass</ion-badge>
-          <ion-badge color="poison">Poison</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="grass">
-        <ion-label>001</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Bulbasaur
+            </h3>
+            <ion-badge color="grass">Grass</ion-badge>
+            <ion-badge color="poison">Poison</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="grass">
+          <ion-label>001</ion-label>
+        </ion-chip>
+      </ion-item>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Charmander
-          </h3>
-          <ion-badge color="fire">Fire</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="fire">
-        <ion-label>004</ion-label>
-      </ion-chip>
-    </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Squirtle
-          </h3>
-          <ion-badge color="water">Water</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="water">
-        <ion-label>007</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Charmander
+            </h3>
+            <ion-badge color="fire">Fire</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="fire">
+          <ion-label>004</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Pikachu
-          </h3>
-          <ion-badge color="electric">Eletric</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="electric">
-        <ion-label>025</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Squirtle
+            </h3>
+            <ion-badge color="water">Water</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="water">
+          <ion-label>007</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/149.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Dragonite
-          </h3>
-          <ion-badge color="dragon">Dragon</ion-badge>
-          <ion-badge color="flying">Flying</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="dragon">
-        <ion-label>149</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Pikachu
+            </h3>
+            <ion-badge color="electric">Eletric</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="electric">
+          <ion-label>025</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/248.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Tyranitar
-          </h3>
-          <ion-badge color="rock">Rock</ion-badge>
-          <ion-badge color="dark02">Dark</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="rock">
-        <ion-label>248</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/149.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Dragonite
+            </h3>
+            <ion-badge color="dragon">Dragon</ion-badge>
+            <ion-badge color="flying">Flying</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="dragon">
+          <ion-label>149</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/282.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Gardevoir
-          </h3>
-          <ion-badge color="psychic">Psychic</ion-badge>
-          <ion-badge color="fairy">Fairy</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="psychic">
-        <ion-label>282</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/248.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Tyranitar
+            </h3>
+            <ion-badge color="rock">Rock</ion-badge>
+            <ion-badge color="dark02">Dark</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="rock">
+          <ion-label>248</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/448.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Lucario
-          </h3>
-          <ion-badge color="fighting">Fighting</ion-badge>
-          <ion-badge color="steel">Steel</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="fighting">
-        <ion-label>448</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/282.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Gardevoir
+            </h3>
+            <ion-badge color="psychic">Psychic</ion-badge>
+            <ion-badge color="fairy">Fairy</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="psychic">
+          <ion-label>282</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/493.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Arceus
-          </h3>
-          <ion-badge color="normal">Normal</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="normal">
-        <ion-label>493</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/448.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Lucario
+            </h3>
+            <ion-badge color="fighting">Fighting</ion-badge>
+            <ion-badge color="steel">Steel</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="fighting">
+          <ion-label>448</ion-label>
+        </ion-chip>
+      </ion-item>
 
-    <ion-item lines="full" class="ion-no-padding">
-      <ion-thumbnail slot="start">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/623.png">
-      </ion-thumbnail>
-      <ion-label>
-        <div>
-          <h3>
-            Golurk
-          </h3>
-          <ion-badge color="ground">Ground</ion-badge>
-          <ion-badge color="ghost">Ghost</ion-badge>
-        </div>
-      </ion-label>
-      <ion-chip color="ground">
-        <ion-label>623</ion-label>
-      </ion-chip>
-    </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/493.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Arceus
+            </h3>
+            <ion-badge color="normal">Normal</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="normal">
+          <ion-label>493</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item lines="full" class="ion-no-padding">
+        <ion-thumbnail slot="start">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/623.png">
+        </ion-thumbnail>
+        <ion-label>
+          <div>
+            <h3>
+              Golurk
+            </h3>
+            <ion-badge color="ground">Ground</ion-badge>
+            <ion-badge color="ghost">Ghost</ion-badge>
+          </div>
+        </ion-label>
+        <ion-chip color="ground">
+          <ion-label>623</ion-label>
+        </ion-chip>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 </ion-content>
